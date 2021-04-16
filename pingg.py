@@ -13,7 +13,7 @@ date_now = datetime.datetime.now().date()
 time_now = datetime.datetime.now().time()
 
 #define some global variables
-max_single_expired = 5 #max attempts to reach an unresponsive host
+max_single_expired = 3 #max attempts to reach an unresponsive host
 expired_dict = {} #place to store number of times a host has been unreachable
 total_expired_dict = {}
 unreachable_skips = {}
@@ -112,6 +112,6 @@ while all_reachable:
 
 		write_files(json_ping_result, txt_ping_result)
 
-	time.sleep(100)
+	time.sleep(1)
 
 
