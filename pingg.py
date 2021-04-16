@@ -112,6 +112,6 @@ while all_reachable:
 
 		write_files(json_ping_result, txt_ping_result)
 
-	time.sleep(1)
+	time.sleep(100)
 
 
